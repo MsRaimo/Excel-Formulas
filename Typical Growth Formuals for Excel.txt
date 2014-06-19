@@ -1,0 +1,167 @@
+######################### 2008 Norms ###################################
+
+
+
+
+///////////////////////////////////////////////////////////////////////
+/								      /
+/   Spring to Winter Typical Growth - Math Grade 7&8                  /
+/	Grade in Programming is grade in Winter			      /
+/								      /
+///////////////////////////////////////////////////////////////////////
+
+=IF([@[SMedian]]="missing", "no data", IF([@Grade]="Grade 7", IF([@[SMedian]]<177, 7, IF([@[SMedian]]<180, 6, IF([@[SMedian]]<190, 5, IF([@[SMedian]]<222, 4, 3)))), IF([@Grade]="Grade 8", IF([@[SMedian]]<179, 7, IF([@[SMedian]]<187, 6, IF([@[SMedian]]<200, 5, IF([@[SMedian]]<220, 4, IF([@[SMedian]]<241,3,2))))), "other Grade")))
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+/								         /
+/   Spring to Winter Typical Growth - Reading Grade 7&8                  /
+/	Grade in Programming is grade in Winter			         /
+/								         /
+//////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+=IF([@[Spring Reading]]="missing", "no data", IF([@Grade]="Grade 7", IF([@[Spring Reading]]<173, 9, IF([@[Spring Reading]]=173, 8, IF([@[Spring Reading]]<180, 7, IF([@[Spring Reading]]<186,6,IF([@[Spring Reading]]<193, 5, IF([@[Spring Reading]]<202, 4, IF([@[Spring Reading]]<213, 3, IF([@[Spring Reading]]<227, 2, IF([@[Spring Reading]]<244, 1, 0))))))))), IF([@Grade]="Grade 8", IF([@[Spring Reading]]<174,10, IF([@[Spring Reading]]<176, 9, IF([@[Spring Reading]]<181, 8, IF([@[Spring Reading]]<186, 7, IF([@[Spring Reading]]<192, 6, IF([@[Spring Reading]]<198, 5, IF([@[Spring Reading]]<206, 4, IF([@[Spring Reading]]<215, 3, IF([@[Spring Reading]]<225, 2, IF([@[Spring Reading]]<240, 1, 0)))))))))), "Other Grade")))
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////
+/								      /
+/   Spring to Winter Typical Growth - Math Grade 3-6                  /
+/	Grade in Programming is grade in Winter			      /
+/								      /
+///////////////////////////////////////////////////////////////////////
+
+
+
+
+=IF([@[SMedian]]="Missing", "No Data", IF([@[Grade Current]]="Grade 2", "Too Young", IF([@[Grade Current]]="Grade 3", IF([@[SMedian]]<160, 14, IF([@[SMedian]]=160, 13, IF([@[SMedian]]=161, 11, IF([@[SMedian]]<164, 10, IF([@[SMedian]]<171, 9, IF([@[SMedian]]<182, 8, IF([@[SMedian]]<195, 7, 6))))))), IF([@[Grade Current]]="Grade 4", IF([@[SMedian]]<167, 9, IF([@[SMedian]]<171, 8, IF([@[SMedian]]<181, 7, IF([@[SMedian]]< 194, 6, IF([@[SMedian]]<205, 5, IF([@[SMedian]]<208, 6, 5)))))), IF([@[Grade Current]]="Grade 5", IF([@[SMedian]]<171, 7, IF([@[SMedian]]<181, 6, IF([@[SMedian]]<222, 5, 4))), IF([@[Grade Current]]="Grade 6", IF([@[SMedian]]<175, 6, IF([@[SMedian]]<185, 5, IF([@[SMedian]]<218, 4, 3))), "Other Grade"))))))
+
+
+
+
+/////////////////////////////////////////////////////////////////////////
+/								        /
+/   Spring to Winter Typical Growth - ReadingGrade 3-6                  /
+/	Grade in Programming is grade in Winter			        /
+/								        /
+/////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+=IF([@[Spring Reading]]="Missing", "No Data", IF([@[Grade Current]]="Grade 2", "Too young", IF([@[Grade Current]]="Grade 3", IF([@[Spring Reading]]<158, 11, IF([@[Spring Reading]]<164, 10, IF([@[Spring Reading]]<171, 9, IF([@[Spring Reading]]<178, 8, IF([@[Spring Reading]]<186, 7, IF([@[Spring Reading]]<194, 6, IF([@[Spring Reading]]<204, 5, IF([@[Spring Reading]]<213, 4,IF([@[Spring Reading]]<225, 3, 2))))))))), IF([@[Grade Current]]="Grade 4", IF([@[Spring Reading]]<167, 9,IF([@[Spring Reading]]<173, 8, IF([@[Spring Reading]]<181, 7, IF([@[Spring Reading]]<188, 6, IF([@[Spring Reading]]<197, 5, IF([@[Spring Reading]]<208, 4, IF([@[Spring Reading]]<221, 3, IF([@[Spring Reading]]<235, 2, 1)))))))), IF([@[Grade Current]]="Grade 5", IF([@[Spring Reading]]<169, 8, IF([@[Spring Reading]]<176, 7, IF([@[Spring Reading]]<184,6, IF([@[Spring Reading]]<192, 5, IF([@[Spring Reading]]<202, 4,IF([@[Spring Reading]]<218, 3, IF([@[Spring Reading]]<234, 2, 1))))))), IF([@[Grade Current]]="Grade 6", IF([@[Spring Reading]]<171, 8, IF([@[Spring Reading]]<172, 7, IF([@[Spring Reading]]<179, 6, IF([@[Spring Reading]]<186, 5, IF([@[Spring Reading]]<195, 4, IF([@[Spring Reading]]<209, 3, IF([@[Spring Reading]]< 230, 2, IF([@[Spring Reading]]<244, 1, 0)))))))), "Other Grade"))))))
+
+
+
+
+///////////////////////////////////////////////////////////////////////
+/								      /
+/   Spring to Spring Typical Growth - Math Grade 7&8                  /
+/	Grade in Programming is grade in final year		      /
+/								      /
+///////////////////////////////////////////////////////////////////////
+
+=IF([@[SMedian]]="missing", "no data", IF([@Grade]="Grade 7", IF([@[SMedian]]<177, 10, IF([@[SMedian]]<183, 9, IF([@[SMedian]]<189, 8, IF([@[SMedian]]<214, 7, IF([@[SMedian]]<235, 6, 5))))), IF([@Grade]="Grade 8", IF([@[SMedian]]<180, 10, IF([@[SMedian]]<186, 9, IF([@[SMedian]]<194, 8, IF([@[SMedian]]<212, 7, IF([@[SMedian]]<224, 6, IF([@[SMedian]]<237, 5, IF([@[SMedian]]<268, 4, 3 ))))))), "Other Grade")))
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////
+/								      /
+/   Spring to Spring Typical Growth - Reading Grade 7&8               /
+/	Grade in Programming is grade in final year		      /
+/								      /
+///////////////////////////////////////////////////////////////////////
+
+=IF([@[SMedian]]="missing", "no data", IF([@Grade]="Grade 7", IF([@[SMedian]]<173, 13, IF([@[SMedian]]<176, 12, IF([@[SMedian]]<180, 11, IF([@[SMedian]]<184, 10, IF([@[SMedian]]< 189, 9, IF([@[SMedian]]<193, 8, IF([@[SMedian]]<198, 7, IF([@[SMedian]]<204, 6, IF([@[SMedian]]<211, 5, IF([@[SMedian]]< 219, 4, IF([@[SMedian]]<229, 3, IF([@[SMedian]]<239, 2, 1)))))))))))), IF([@Grade]="Grade 8", IF([@[SMedian]]<174, 14, IF([@[SMedian]]<177, 13, IF([@[SMedian]]<181, 12, IF([@[SMedian]]<184, 11, IF([@[SMedian]]<188, 10, IF([@[SMedian]]< 192, 9, IF([@[SMedian]]< 196, 8, IF([@[SMedian]]<201, 7, IF([@[SMedian]]< 206, 6, IF([@[SMedian]]<213, 5, IF([@[SMedian]]< 219, 4, IF([@[SMedian]]<225, 3, IF([@[SMedian]]<235, 2, 1))))))))))))), "Other Grade"))) 
+
+
+
+///////////////////////////////////////////////////////////////////////
+/								      /
+/   Spring to Spring Typical Growth - Reading Grade 3-6               /
+/	Grade in Programming is grade in year2			      /
+/								      /
+///////////////////////////////////////////////////////////////////////
+
+
+=IF([@[SMedian]]="missing", "no data", IF([@Grade]="Grade 3", IF([@[SMedian]]<158, 18,IF([@[SMedian]]<162, 17,IF([@[SMedian]]<166, 16,IF([@[SMedian]]<170, 15, IF([@[SMedian]]<175, 14, IF([@[SMedian]]<179, 13, IF([@[SMedian]]<184, 12, IF([@[SMedian]]<189, 11, IF([@[SMedian]]<194, 10, IF([@[SMedian]]< 200, 9, IF([@[SMedian]]<205, 8, IF([@[SMedian]]<212, 7, IF([@[SMedian]]< 218, 6, IF([@[SMedian]]<225, 5, 4)))))))))))))), IF([@Grade]="Grade 4", IF([@[SMedian]]<168, 14, IF([@[SMedian]]<173, 13, IF([@[SMedian]]<178, 12, IF([@[SMedian]]< 183,11, IF([@[SMedian]]<187, 10, IF([@[SMedian]]< 192, 9, IF([@[SMedian]]<199, 8, IF([@[SMedian]]< 206, 7, IF([@[SMedian]]<215, 6, IF([@[SMedian]]<221, 5, IF([@[SMedian]]<229, 4, IF([@[SMedian]]<236, 3, 2)))))))))))), IF([@Grade]="Grade 5", IF([@[SMedian]]<169, 13, IF([@[SMedian]]< 173, 12, IF([@[SMedian]]<177, 11, IF([@[SMedian]]<183, 10, IF([@[SMedian]]<188, 9, IF([@[SMedian]]<192, 8, IF([@[SMedian]]<199, 7, IF([@[SMedian]]<206, 6, IF([@[SMedian]]<218, 5, IF([@[SMedian]]<226, 4, IF([@[SMedian]]<236, 3, 2))))))))))), IF([@Grade]="Grade 6", IF([@[SMedian]]<172, 11,IF([@[SMedian]]<177, 10, IF([@[SMedian]]<182, 9, IF([@[SMedian]]<187, 8, IF([@[SMedian]]<192, 7, IF([@[SMedian]]<198, 6, IF([@[SMedian]]<208, 5, IF([@[SMedian]]<221, 4,IF([@[SMedian]]<232, 3, IF([@[SMedian]]<240, 2, 1)))))))))), "Other Grade")))))
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////
+/								        /
+/   Spring to Spring Typical Growth - Math Grade 3-6                    /
+/	Grade in Programming is grade in Year2			        /
+/								        /
+/////////////////////////////////////////////////////////////////////////
+
+
+
+
+=IF([@[SMedian]]="missing", "no data", IF([@Grade]="Grade 3", IF([@[SMedian]]<161, 20, IF([@[SMedian]]<162, 18, IF([@[SMedian]]<163, 17, IF([@[SMedian]]<165, 16, IF([@[SMedian]]<169, 15, IF([@[SMedian]]<175, 14, IF([@[SMedian]]<184, 13, IF([@[SMedian]]< 194, 12, IF([@[SMedian]]< 215, 11, 10))))))))), IF([@Grade]="Grade 4", IF([@[SMedian]]<168, 14, IF([@[SMedian]]< 171, 13, IF([@[SMedian]]< 176, 12, IF([@[SMedian]]<185, 11, IF([@[SMedian]]< 193, 10, IF([@[SMedian]]< 205, 9, IF([@[SMedian]]< 213, 10, IF([@[SMedian]]< 225, 9, 8)))))))), IF([@Grade]="Grade 5", IF([@[SMedian]]<171, 11, IF([@[SMedian]]<177, 10, IF([@[SMedian]]<190, 9, IF([@[SMedian]]<228, 8, IF([@[SMedian]]<247, 7, 6))))), IF([@Grade]="Grade 6", IF([@[SMedian]]<175, 10, IF([@[SMedian]]<177, 9, IF([@[SMedian]]<185, 8, IF([@[SMedian]]<191, 7, IF([@[SMedian]]<245, 6, 5))))), "Other Grade")))))
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////
+/								      /
+/   Fall to Spring Typical Growth - Math Grade 7&8                    /
+/								      /
+/								      /
+///////////////////////////////////////////////////////////////////////
+
+=IF([@Fall]="missing", "no data", IF([@Grade]="Grade 7", IF([@Fall]<177, 11, IF([@Fall]<179, 10, IF([@Fall]<187, 9, IF([@Fall]<195, 8, IF([@Fall]<216, 7, IF([@Fall]<235, 6,  IF([@Fall]<246, 5, IF([@Fall]<262, 4, 3)))))))), IF([@Grade]="Grade 8", IF([@Fall]<180, 10, IF([@Fall]<182, 9, IF([@Fall]<191, 8, IF([@Fall]<199, 7, IF([@Fall]<218,6, IF([@Fall]<230, 5,  IF([@Fall]<245, 4,  IF([@Fall]<262, 3,  IF([@Fall]<268, 2,1))))))))), "other Grade")))
+
+
+
+
+///////////////////////////////////////////////////////////////////////
+/								      /
+/   Fall to Spring Typical Growth - Reading Grade 7&8                 /
+/								      /
+/								      /
+///////////////////////////////////////////////////////////////////////
+
+
+
+
+
+=IF([@Fall]="missing", "no data", IF([@Grade]="Grade 7", IF([@Fall]<170, 14, IF([@Fall]<176, 13, IF([@Fall]<180, 12, IF([@Fall]<183,11,IF([@Fall]<186, 10, IF([@Fall]<190, 9, IF([@Fall]<195, 8, IF([@Fall]<200, 7, IF([@Fall]<206, 6, IF([@Fall]<212,5,IF([@Fall]<219,4,IF([@Fall]<225,3,IF([@Fall]<234,2, 1))))))))))))), IF([@Grade]="Grade 8", IF([@Fall]<170,15, IF([@Fall]<173, 14, IF([@Fall]<176, 13, IF([@Fall]<180, 12, IF([@Fall]<183, 11, IF([@Fall]<186, 10, IF([@Fall]<190, 9, IF([@Fall]<194, 8, IF([@Fall]<198, 7, IF([@Fall]<204, 6, IF([@Fall]<210, 5,IF([@Fall]<217, 4, IF([@Fall]<223, 3,IF([@Fall]<230, 2,   1)))))))))))))), "Other Grade")))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

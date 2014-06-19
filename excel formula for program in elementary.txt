@@ -1,0 +1,10 @@
+# EXCEL FORMULA FOR PROGRAM, ELEMENTARY
+# pull LEP, do if lep yes, spanish, english in G2
+
+
+#put course name in M2, this formula in H2
+=IF(ISNUMBER(SEARCH("DL2", M2)), "DL2", IF(ISNUMBER(SEARCH("DL1", M2)), "DL1", IF(ISNUMBER(SEARCH("BIL", M2)), "DL1",  IF(ISNUMBER(SEARCH("ESL", M2)), "ESL", IF(ISNUMBER(SEARCH("Primary", M2)), "Sped",  IF(ISNUMBER(SEARCH("Intermediate", M2)), "Sped", IF(ISNUMBER(SEARCH("SET SWAS", M2)), "SET SWAS", IF(ISNUMBER(SEARCH("SWAS", M2)), "SWAS", "GEN ED"))))))))
+
+# put this in I2, for program
+=IF(H2="DL2",H2&G2, H2)
+
